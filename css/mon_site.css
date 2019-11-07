@@ -1,0 +1,110 @@
+/*Utilisation de la police fournie*/
+@font-face {
+    font-family: "Bernina";
+    src: url("../fonts/BerninaSans-Web-CondensedBold.woff2") format("woff2");
+   }
+h1, h2, h3, button,.experience{
+    font-family: Bernina;
+    color: #004153;
+}
+
+h1{
+    color:black; /*Blanc d'après la maquette*/
+}
+
+.background{
+	background-image: url("../background.jpg");
+    width: 100%;
+    margin: 0%;
+}
+
+.slogan{
+    padding: 1%;
+    background-color: white;
+}
+
+.inner {
+	width: 100%;
+}
+
+.button{
+    background-color: #fff;
+    border: 0.5%;
+    border-color:grey; 
+    color: #004153;
+    padding: 10px 25px;
+    border-radius: 10%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.titre{
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+}
+
+.experience{
+    text-align: right;
+    color: #004153;
+}
+
+.lesLogos{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.unLogo{
+    width: 33%;
+    display: inline-block;
+}
+
+.txtcenter{
+    text-align: center;
+
+}
+/*Mise en place pour un écran de 480px (smartphone)*/
+@media(max-width: 480px){
+	.background{
+		background-image: url("../background.jpg");
+        width: 50%;
+    }
+    .inner {
+        width: 100%;
+    }
+    .experience{
+        text-align: left;
+        color: #004153;
+    }
+    
+}
+/*Mise en place pour un écran de 768px (tablette)*/
+@media(max-width: 768px){
+    .background{
+		background-image: url("../background.jpg");
+        width: 100%;
+        overflow: hidden;
+    }
+    .inner {
+        width: 100%;
+    }
+    .lesLogos{
+        display: -ms-flexbox;
+        display: inline-flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    .unLogo{
+        width: 33%;      
+    }
+    .experience{
+        text-align: left;
+        color: #004153;
+    }
+}
